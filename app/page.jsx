@@ -42,6 +42,18 @@ export default function Home() {
     }
   }
 
+  const clear_filters = () => {
+    setBrightness(100)
+    setContrast(100)
+    setInvert(0)
+    setGrayscale(0)
+    setHue_rotate(0)
+    setSaturate(100)
+    setSepia(0)
+    setBlur(0)
+    setOpacity(100)
+  }
+
   const save_final_image = () => {
     const canvas = document.createElement('canvas')
     const ctx = canvas.getContext('2d')
@@ -68,9 +80,12 @@ export default function Home() {
               </div>
 
               <div className="grid grid-cols-2 gap-3">
-                <div className="col-span-1">
+                <div className="col-span-2 mb-4">
 
                   <button onClick={previewInput} className="btn btn-accent w-full">Choose Image</button>
+                </div>
+                <div className="col-span-1">
+                  <button onClick={clear_filters} className="btn btn-error w-full">Clear Preset</button>
                 </div>
                 <div className="col-span-1">
                   <button onClick={save_final_image} className="btn btn-primary w-full">save Image</button>
