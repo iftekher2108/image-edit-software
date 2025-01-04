@@ -85,12 +85,12 @@ export default function Home() {
                 <div className="card-body">
                   <div className="p-3 border card border-primary">
                     <div className="card-header mb-3">
-                      <h3 className="font-bold uppercase ">Image Filter</h3>
+                      <h3 className="font-bold text-primary uppercase ">Image Filter</h3>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
 
                       <div className="col-span-1 mb-1">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex justify-between text-primary items-center mb-2">
                           <div className='uppercase'>Brightness</div>
                           <div>{brightness}%</div>
                         </div>
@@ -98,7 +98,7 @@ export default function Home() {
                       </div>
 
                       <div className="col-span-1 mb-1">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex justify-between text-primary items-center mb-2">
                           <div className='uppercase'>Contrast</div>
                           <div>{contrast}%</div>
                         </div>
@@ -106,7 +106,7 @@ export default function Home() {
                       </div>
 
                       <div className="col-span-1">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex justify-between text-primary items-center mb-2">
                           <div className='uppercase'>Invert</div>
                           <div>{invert}%</div>
                         </div>
@@ -114,7 +114,7 @@ export default function Home() {
                       </div>
 
                       <div className="col-span-1">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex justify-between text-primary items-center mb-2">
                           <div className='uppercase'>Grayscale</div>
                           <div>{grayscale}%</div>
                         </div>
@@ -122,7 +122,7 @@ export default function Home() {
                       </div>
 
                       <div className="col-span-1">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex justify-between text-primary items-center mb-2">
                           <div className='uppercase'>Hue-rotate</div>
                           <div>{hue_rotate}%</div>
                         </div>
@@ -130,7 +130,7 @@ export default function Home() {
                       </div>
 
                       <div className="col-span-1">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex justify-between text-primary items-center mb-2">
                           <div className='uppercase'>saturate</div>
                           <div>{saturate}%</div>
                         </div>
@@ -138,7 +138,7 @@ export default function Home() {
                       </div>
 
                       <div className="col-span-1">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex justify-between text-primary items-center mb-2">
                           <div className='uppercase'>sepia</div>
                           <div>{sepia}%</div>
                         </div>
@@ -146,14 +146,14 @@ export default function Home() {
                       </div>
 
                       <div className="col-span-1">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex justify-between text-primary items-center mb-2">
                           <div className='uppercase'>blur</div>
                           <div>{blur}px</div>
                         </div>
                         <input type="range" onChange={(e) => setBlur(e.target.value)} value={blur} max={15} className="range range-primary" />
                       </div>
                       <div className="col-span-1">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex justify-between text-primary items-center mb-2">
                           <div className='uppercase'>opacity</div>
                           <div>{opacity}%</div>
                         </div>
@@ -166,7 +166,7 @@ export default function Home() {
 
                   <div className="card border border-primary p-3">
                     <div className="card-header mb-3">
-                      <h3 className="font-bold uppercase ">Image Transform</h3>
+                      <h3 className="font-bold text-primary uppercase">Image Transform</h3>
                     </div>
                     <div className="grid grid-cols-8 gap-2">
                       <div className="col-span-2">
